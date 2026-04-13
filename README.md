@@ -1089,7 +1089,7 @@ la diferencia: sentinel unifica todas estas capacidades en una sola plataforma c
 <p align="center">
   <em>SENTINEL v1.0.0 — M-Society & c1q_</em>
   <br/>
-  <em>plataforma osint enterprise de fuentes abiertas</em>
+  <em>plataforma osint enterprise de fuentes abiertas https://discord.gg/9QRngbrMKS</em>
 </p>
 
 <p align="center">
