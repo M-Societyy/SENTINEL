@@ -1039,14 +1039,14 @@ git push origin feature/mi-feature
       <br/>
       <em>organizacion</em>
       <br/>
-      <a href="https://github.com/m-society">github</a>
+      <a href="https://discord.gg/9QRngbrMKS">github</a>
     </td>
     <td align="center">
       <strong>c1q_</strong>
       <br/>
       <em>lead developer</em>
       <br/>
-      <a href="https://github.com/c1q_">github</a>
+      <a href="">github</a>
     </td>
   </tr>
 </table>
