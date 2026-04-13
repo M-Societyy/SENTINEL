@@ -1,5 +1,5 @@
 # sentinel - clase base para todos los modulos osint
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import time
 import asyncio

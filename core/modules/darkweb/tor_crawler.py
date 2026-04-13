@@ -1,5 +1,5 @@
 # sentinel - modulo de crawling en la dark web via tor
-# m-society & c1q_
+# c1q_ (M-Society team)
 # modulo desactivado por defecto - requiere activacion explicita
 
 import asyncio

@@ -1,5 +1,5 @@
 // sentinel - microservicio de crawling en go
-// m-society & c1q_
+// c1q_ (M-Society team)
 // crawlers de alta velocidad para redes sociales, foros y paste sites
 
 package main
@@ -78,7 +78,7 @@ func (sc *SentinelCrawler) Crawl(req CrawlRequest) CrawlResponse {
 	if req.UserAgent != "" {
 		c.UserAgent = req.UserAgent
 	} else {
-		c.UserAgent = "SENTINEL-Crawler/1.0 (OSINT Research; +https://github.com/m-society)"
+		c.UserAgent = "SENTINEL-Crawler/1.0 (OSINT Research; +https://github.com/M-Societyy)"
 	}
 
 	if req.DelayMs > 0 {
@@ -225,14 +225,14 @@ func handleHealth(w http.ResponseWriter, r *http.Request) {
 		"estado":  "operativo",
 		"nombre":  "sentinel-crawler",
 		"version": "1.0.0",
-		"autor":   "m-society & c1q_",
+		"autor":   "c1q_ (M-Society team)",
 	})
 }
 
 func main() {
 	log.Println("╔══════════════════════════════════════════╗")
 	log.Println("║  sentinel crawler v1.0.0                 ║")
-	log.Println("║  m-society & c1q_                        ║")
+	log.Println("║  c1q_ (M-Society team)                   ║")
 	log.Println("╚══════════════════════════════════════════╝")
 
 	crawler := NuevoCrawler()

@@ -1,5 +1,5 @@
 # sentinel - endpoints de modulos osint
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession

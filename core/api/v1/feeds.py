@@ -1,5 +1,5 @@
 # sentinel - endpoints de threat intelligence feeds
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from fastapi import APIRouter, Depends
 from pydantic import BaseModel, Field

@@ -32,8 +32,8 @@ sudo ufw enable
 
 ```bash
 # clonar repositorio
-git clone https://github.com/m-society/sentinel.git
-cd sentinel/docker
+git clone https://github.com/M-Societyy/SENTINEL.git
+cd SENTINEL/docker
 
 # crear .env de produccion
 cp .env.example .env.production
@@ -109,4 +109,4 @@ kubectl apply -f docker/k8s/deployment.yaml
 - [ ] rate limiting configurado
 
 ---
-*SENTINEL v1.0.0 - M-Society & c1q_*
+*SENTINEL v1.0.0 - Developed by c1q_ for M-Society team*

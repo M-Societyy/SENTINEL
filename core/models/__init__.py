@@ -1,5 +1,5 @@
 # sentinel - modelos sqlalchemy
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from models.entidades import Entidad, RelacionEntidad
 from models.investigaciones import Investigacion, SemillaInvestigacion

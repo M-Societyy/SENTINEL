@@ -1,5 +1,5 @@
 # sentinel - mapeo de subsidiarias y estructura corporativa
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from typing import Optional
 

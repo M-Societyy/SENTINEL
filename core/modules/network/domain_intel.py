@@ -1,5 +1,5 @@
 # sentinel - inteligencia de dominios
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import asyncio
 import re

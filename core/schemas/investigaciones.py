@@ -1,5 +1,5 @@
 # sentinel - schemas de investigaciones
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from datetime import datetime
 from typing import Optional

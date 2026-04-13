@@ -1,5 +1,5 @@
 # sentinel - cliente virustotal api v3
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import asyncio
 from typing import Optional

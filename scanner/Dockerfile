@@ -1,5 +1,5 @@
 # sentinel scanner - rust build
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 FROM rust:1.76-slim AS builder
 WORKDIR /app

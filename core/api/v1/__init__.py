@@ -1,2 +1,2 @@
 # sentinel - api v1 routers
-# m-society & c1q_
+# c1q_ (M-Society team)

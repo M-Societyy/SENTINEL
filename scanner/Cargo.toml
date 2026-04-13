@@ -1,11 +1,11 @@
 # sentinel scanner - modulos de red de alta performance
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 [package]
 name = "sentinel-scanner"
 version = "1.0.0"
 edition = "2021"
-authors = ["M-Society & c1q_"]
+authors = ["c1q_"]
 description = "modulos de red de alta performance para sentinel osint"
 
 [dependencies]

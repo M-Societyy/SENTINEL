@@ -1,5 +1,5 @@
 # sentinel - prometheus config
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 global:
   scrape_interval: 15s

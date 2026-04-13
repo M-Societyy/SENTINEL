@@ -1,5 +1,5 @@
 # sentinel crawler - go build
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 FROM golang:1.22-alpine AS builder
 WORKDIR /app

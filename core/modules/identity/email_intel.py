@@ -1,5 +1,5 @@
 # sentinel - modulo de inteligencia de email
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import re
 import hashlib

@@ -1,5 +1,5 @@
 # sentinel - generador de reportes pdf con weasyprint
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import os
 from datetime import datetime
@@ -78,7 +78,7 @@ class GeneradorReportes:
             identidad = Identity(
                 name="SENTINEL by M-Society",
                 identity_class="tool",
-                description="plataforma osint enterprise - m-society & c1q_",
+                description="plataforma osint enterprise - c1q_ (M-Society team)",
             )
 
             objetos = [identidad]
@@ -130,7 +130,7 @@ class GeneradorReportes:
                 estadisticas=datos.get("estadisticas", {}),
                 fecha_generacion=datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC"),
                 version="1.0.0",
-                autor="M-Society & c1q_",
+                autor="c1q_ (M-Society team)",
             )
         except Exception as e:
             log.error("error renderizando template", error=str(e))
@@ -247,7 +247,7 @@ class GeneradorReportes:
             investigacion: {inv.get('nombre', 'sin nombre')}<br>
             fecha: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}<br>
             operador: {inv.get('operador', 'anonimo')}<br>
-            generado por: m-society & c1q_
+            generado por: c1q_ (M-Society team)
         </p>
     </div>
 
@@ -291,7 +291,7 @@ class GeneradorReportes:
     </div>
 
     <div class="footer">
-        <p>SENTINEL v1.0.0 - m-society & c1q_</p>
+        <p>SENTINEL v1.0.0 - c1q_ (M-Society team)</p>
         <p>plataforma osint enterprise</p>
     </div>
 </body>

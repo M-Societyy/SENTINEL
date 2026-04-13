@@ -1,5 +1,5 @@
 // sentinel - banner grabbing de servicios
-// m-society & c1q_
+// c1q_ (M-Society team)
 
 use clap::Parser;
 use serde::Serialize;
@@ -10,7 +10,7 @@ use tokio::time::timeout;
 
 #[derive(Parser, Debug)]
 #[command(name = "sentinel-banner-grabber")]
-#[command(about = "banner grabbing de servicios - sentinel osint by m-society & c1q_")]
+#[command(about = "banner grabbing de servicios - sentinel osint by c1q_ (M-Society team)")]
 struct Args {
     /// ip objetivo
     #[arg(short, long)]

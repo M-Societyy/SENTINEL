@@ -128,4 +128,4 @@ todos los modulos incluyen:
 - darkweb modules desactivados por defecto
 
 ---
-*SENTINEL v1.0.0 - M-Society & c1q_*
+*SENTINEL v1.0.0 - Developed by c1q_ for M-Society team*

@@ -1,5 +1,5 @@
 # sentinel - sesion de base de datos async
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.orm import DeclarativeBase

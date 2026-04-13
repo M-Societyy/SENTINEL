@@ -1,5 +1,5 @@
 # sentinel - configuracion de celery y tareas principales
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from celery import Celery
 from config import config

@@ -1,5 +1,5 @@
 # sentinel - inteligencia de certificados ssl/tls
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import asyncio
 import ssl

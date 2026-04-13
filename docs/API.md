@@ -226,7 +226,7 @@ agrega un nuevo threat feed.
   "estado": "operativo",
   "version": "1.0.0",
   "nombre": "SENTINEL",
-  "autor": "m-society & c1q_"
+  "autor": "c1q_ (M-Society team)"
 }
 ```
 
@@ -251,4 +251,4 @@ metricas prometheus.
 
 ---
 
-*SENTINEL v1.0.0 - M-Society & c1q_*
+*SENTINEL v1.0.0 - Developed by c1q_ for M-Society team*

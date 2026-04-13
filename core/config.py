@@ -1,5 +1,5 @@
 # sentinel - configuracion central
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from pydantic_settings import BaseSettings
 from typing import Optional

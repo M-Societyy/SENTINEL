@@ -1,5 +1,5 @@
 # sentinel - indexador de sitios onion
-# m-society & c1q_
+# c1q_ (M-Society team)
 # modulo complementario al tor_crawler - desactivado por defecto
 
 import asyncio

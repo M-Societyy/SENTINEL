@@ -1,5 +1,5 @@
 # sentinel - schemas de modulos osint
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from typing import Optional, Any
 from uuid import UUID

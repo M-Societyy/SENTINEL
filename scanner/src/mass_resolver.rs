@@ -1,5 +1,5 @@
 // sentinel - resolucion dns masiva
-// m-society & c1q_
+// c1q_ (M-Society team)
 
 use clap::Parser;
 use serde::Serialize;
@@ -9,7 +9,7 @@ use tokio::sync::Semaphore;
 
 #[derive(Parser, Debug)]
 #[command(name = "sentinel-mass-resolver")]
-#[command(about = "dns resolution masiva - sentinel osint by m-society & c1q_")]
+#[command(about = "dns resolution masiva - sentinel osint by c1q_ (M-Society team)")]
 struct Args {
     /// archivo con dominios (uno por linea), o - para stdin
     #[arg(short, long, default_value = "-")]

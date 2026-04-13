@@ -1,4 +1,4 @@
-# sentinel - plataforma osint by m-society & c1q_
+# sentinel - plataforma osint by c1q_ (M-Society team)
 # docker compose para desarrollo local
 
 version: "3.9"

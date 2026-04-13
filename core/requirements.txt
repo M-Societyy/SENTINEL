@@ -1,5 +1,5 @@
 # sentinel - dependencias python
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 # framework web
 fastapi==0.109.2

@@ -1,5 +1,5 @@
 # sentinel - geolocalizacion de imagenes via exif gps
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from typing import Optional
 

@@ -1,5 +1,5 @@
 # sentinel - enumeracion de usernames en 400+ plataformas
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import asyncio
 from typing import Optional

@@ -1,5 +1,5 @@
 // sentinel - tls fingerprinting (ja3 style)
-// m-society & c1q_
+// c1q_ (M-Society team)
 
 use clap::Parser;
 use serde::Serialize;
@@ -10,7 +10,7 @@ use tokio::io::{AsyncReadExt, AsyncWriteExt};
 
 #[derive(Parser, Debug)]
 #[command(name = "sentinel-tls-fingerprint")]
-#[command(about = "tls fingerprinting - sentinel osint by m-society & c1q_")]
+#[command(about = "tls fingerprinting - sentinel osint by c1q_ (M-Society team)")]
 struct Args {
     /// dominio o ip objetivo
     #[arg(short, long)]

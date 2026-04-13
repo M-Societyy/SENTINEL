@@ -1,5 +1,5 @@
 # sentinel - alembic migrations env
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 from logging.config import fileConfig
 from sqlalchemy import pool

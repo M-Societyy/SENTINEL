@@ -1,5 +1,5 @@
 # sentinel core - python backend
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 FROM python:3.12-slim
 

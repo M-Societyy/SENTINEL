@@ -1,5 +1,5 @@
 # sentinel - extraccion de metadatos de pdfs
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import asyncio
 import io

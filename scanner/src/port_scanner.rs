@@ -1,5 +1,5 @@
 // sentinel - port scanner masivo con tokio
-// m-society & c1q_
+// c1q_ (M-Society team)
 // tcp connect scan de alta velocidad
 
 use clap::Parser;
@@ -13,7 +13,7 @@ use std::sync::Arc;
 
 #[derive(Parser, Debug)]
 #[command(name = "sentinel-port-scanner")]
-#[command(about = "port scanner masivo - sentinel osint by m-society & c1q_")]
+#[command(about = "port scanner masivo - sentinel osint by c1q_ (M-Society team)")]
 struct Args {
     /// ip o rango a escanear
     #[arg(short, long)]

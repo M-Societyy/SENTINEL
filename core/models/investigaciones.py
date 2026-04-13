@@ -1,5 +1,5 @@
 # sentinel - modelo de investigaciones
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import uuid
 from datetime import datetime

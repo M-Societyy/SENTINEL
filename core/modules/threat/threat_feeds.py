@@ -1,5 +1,5 @@
 # sentinel - consumidor de feeds de threat intelligence
-# m-society & c1q_
+# c1q_ (M-Society team)
 
 import asyncio
 import csv

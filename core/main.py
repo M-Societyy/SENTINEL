@@ -1,5 +1,5 @@
 # sentinel - aplicacion principal fastapi
-# m-society & c1q_
+# c1q_ (M-Society team)
 # plataforma osint enterprise - version 1.0.0
 
 import asyncio
@@ -39,7 +39,7 @@ log = structlog.get_logger()
 
 DISCLAIMER = """
 ╔══════════════════════════════════════════════════════════════════╗
-║  SENTINEL v1.0.0 - plataforma osint by m-society & c1q_        ║
+║  SENTINEL v1.0.0 - plataforma osint by c1q_ (M-Society team)     ║
 ║                                                                  ║
 ║  esta herramienta esta disenada exclusivamente para:             ║
 ║  - investigaciones de seguridad autorizadas                      ║
@@ -68,7 +68,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="SENTINEL",
-    description="plataforma osint enterprise by m-society & c1q_",
+    description="plataforma osint enterprise by c1q_ (M-Society team)",
     version=config.version,
     default_response_class=ORJSONResponse,
     lifespan=lifespan,
@@ -105,7 +105,7 @@ async def health_check():
         "estado": "operativo",
         "version": config.version,
         "nombre": config.nombre_app,
-        "autor": "m-society & c1q_",
+        "autor": "c1q_ (M-Society team)",
     }
 
 
@@ -115,7 +115,7 @@ async def info():
     return {
         "nombre": "SENTINEL",
         "version": config.version,
-        "autor": "m-society & c1q_",
+        "autor": "c1q_ (M-Society team)",
         "descripcion": "plataforma unificada de inteligencia de fuentes abiertas",
         "disclaimer": "uso exclusivo para investigaciones autorizadas",
         "capacidades": [
