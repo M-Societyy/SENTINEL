@@ -84,8 +84,8 @@ services:
   # --- backend python ---
   core:
     build:
-      context: ../
-      dockerfile: sentinel/core/Dockerfile
+      context: ../core
+      dockerfile: Dockerfile
     container_name: sentinel-core
     environment:
       - DATABASE_URL=postgresql+asyncpg://sentinel:${POSTGRES_PASSWORD:-sentinel_dev_2024}@postgres:5432/sentinel
@@ -108,15 +108,15 @@ services:
       neo4j:
         condition: service_healthy
     volumes:
-      - ../sentinel/core:/app
+      - ../core:/app
     networks:
       - sentinel-net
 
   # --- worker celery ---
   celery-worker:
     build:
-      context: ../
-      dockerfile: sentinel/core/Dockerfile
+      context: ../core
+      dockerfile: Dockerfile
     container_name: sentinel-celery-worker
     command: celery -A tasks.celery_app worker --loglevel=info --concurrency=4
     environment:
@@ -132,15 +132,15 @@ services:
       redis:
         condition: service_healthy
     volumes:
-      - ../sentinel/core:/app
+      - ../core:/app
     networks:
       - sentinel-net
 
   # --- celery beat scheduler ---
   celery-beat:
     build:
-      context: ../
-      dockerfile: sentinel/core/Dockerfile
+      context: ../core
+      dockerfile: Dockerfile
     container_name: sentinel-celery-beat
     command: celery -A tasks.celery_app beat --loglevel=info
     environment:
@@ -150,14 +150,14 @@ services:
       redis:
         condition: service_healthy
     volumes:
-      - ../sentinel/core:/app
+      - ../core:/app
     networks:
       - sentinel-net
 
   # --- crawler go ---
   crawler:
     build:
-      context: ../sentinel/crawler
+      context: ../crawler
       dockerfile: Dockerfile
     container_name: sentinel-crawler
     environment:
@@ -172,35 +172,35 @@ services:
       - sentinel-net
 
   # --- frontend react ---
-  frontend:
-    build:
-      context: ../sentinel/frontend
-      dockerfile: Dockerfile
-    container_name: sentinel-frontend
-    ports:
-      - "3000:3000"
-    environment:
-      - VITE_API_URL=http://localhost:8000
-      - VITE_WS_URL=ws://localhost:8000
-    depends_on:
-      - core
-    networks:
-      - sentinel-net
+  # frontend:
+  #   build:
+  #     context: ../frontend
+  #     dockerfile: Dockerfile
+  #   container_name: sentinel-frontend
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - VITE_API_URL=http://localhost:8000
+  #     - VITE_WS_URL=ws://localhost:8000
+  #   depends_on:
+  #     - core
+  #   networks:
+  #     - sentinel-net
 
   # --- reverse proxy ---
-  nginx:
-    image: nginx:alpine
-    container_name: sentinel-nginx
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-    depends_on:
-      - core
-      - frontend
-    networks:
-      - sentinel-net
+  # nginx:
+  #   image: nginx:alpine
+  #   container_name: sentinel-nginx
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+  #   depends_on:
+  #     - core
+  #     - frontend
+  #   networks:
+  #     - sentinel-net
 
   # --- metricas ---
   prometheus:
