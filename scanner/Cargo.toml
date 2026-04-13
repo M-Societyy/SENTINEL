@@ -1,0 +1,41 @@
+# sentinel scanner - modulos de red de alta performance
+# m-society & c1q_
+
+[package]
+name = "sentinel-scanner"
+version = "1.0.0"
+edition = "2021"
+authors = ["M-Society & c1q_"]
+description = "modulos de red de alta performance para sentinel osint"
+
+[dependencies]
+tokio = { version = "1.36", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+rayon = "1.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+rustls = "0.22"
+x509-parser = "0.16"
+md-5 = "0.10"
+sha1 = "0.10"
+sha2 = "0.10"
+hex = "0.4"
+trust-dns-resolver = "0.23"
+anyhow = "1.0"
+
+[[bin]]
+name = "port-scanner"
+path = "src/port_scanner.rs"
+
+[[bin]]
+name = "banner-grabber"
+path = "src/banner_grabber.rs"
+
+[[bin]]
+name = "tls-fingerprint"
+path = "src/tls_fingerprint.rs"
+
+[[bin]]
+name = "mass-resolver"
+path = "src/mass_resolver.rs"

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6c5ce7"/>
+      <stop offset="50%" style="stop-color:#a29bfe"/>
+      <stop offset="100%" style="stop-color:#fd79a8"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6c5ce7;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#a29bfe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fd79a8;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+
+  <!-- decorative circles -->
+  <circle cx="100" cy="100" r="150" fill="none" stroke="#6c5ce7" stroke-opacity="0.05" stroke-width="1"/>
+  <circle cx="700" cy="80" r="120" fill="none" stroke="#fd79a8" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- shield icon -->
+  <g transform="translate(100, 60)">
+    <path d="M0,0 L25,-15 L50,0 L50,30 C50,50 25,65 25,65 C25,65 0,50 0,30 Z"
+          fill="none" stroke="url(#textGrad)" stroke-width="2.5" opacity="0.8"/>
+    <path d="M15,20 L22,27 L35,14"
+          fill="none" stroke="#a29bfe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- title -->
+  <text x="400" y="85" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="url(#textGrad)" letter-spacing="12">
+    SENTINEL
+  </text>
+
+  <!-- subtitle -->
+  <text x="400" y="120" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#a29bfe" letter-spacing="6" font-weight="300">
+    OSINT INTELLIGENCE PLATFORM
+  </text>
+
+  <!-- line -->
+  <line x1="200" y1="140" x2="600" y2="140" stroke="url(#lineGrad)" stroke-width="1"/>
+
+  <!-- credits -->
+  <text x="400" y="165" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#666" letter-spacing="2">
+    M-SOCIETY &amp; C1Q_  ·  v1.0.0
+  </text>
+
+  <!-- decorative dots -->
+  <circle cx="250" cy="175" r="2" fill="#6c5ce7" opacity="0.3"/>
+  <circle cx="400" cy="180" r="1.5" fill="#a29bfe" opacity="0.3"/>
+  <circle cx="550" cy="175" r="2" fill="#fd79a8" opacity="0.3"/>
+</svg>

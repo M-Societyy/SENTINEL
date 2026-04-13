@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+package sentinel;
+option go_package = "sentinel-crawler/proto";
+
+// servicio de crawling
+service CrawlerService {
+  rpc Crawl(CrawlRequest) returns (CrawlResponse);
+  rpc CrawlSocial(SocialCrawlRequest) returns (CrawlResponse);
+  rpc CrawlPaste(PasteCrawlRequest) returns (CrawlResponse);
+  rpc Health(HealthRequest) returns (HealthResponse);
+}
+
+message CrawlRequest {
+  repeated string urls = 1;
+  int32 profundidad = 2;
+  int32 max_paginas = 3;
+  string user_agent = 4;
+  int32 delay_ms = 5;
+  bool buscar_emails = 6;
+  string buscar_texto = 7;
+}
+
+message SocialCrawlRequest {
+  string plataforma = 1;
+  string username = 2;
+  int32 max_posts = 3;
+}
+
+message PasteCrawlRequest {
+  repeated string keywords = 1;
+  int32 max_resultados = 2;
+  repeated string sitios = 3;
+}
+
+message CrawlResponse {
+  repeated CrawlResult resultados = 1;
+  int32 total = 2;
+  string duracion = 3;
+  repeated string errores = 4;
+}
+
+message CrawlResult {
+  string url = 1;
+  string titulo = 2;
+  string texto = 3;
+  repeated string links = 4;
+  repeated string emails = 5;
+  map<string, string> metadata = 6;
+  int32 status_code = 7;
+  string crawled_at = 8;
+}
+
+message HealthRequest {}
+
+message HealthResponse {
+  string estado = 1;
+  string version = 2;
+}
