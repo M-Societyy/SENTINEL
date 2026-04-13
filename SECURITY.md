@@ -12,7 +12,7 @@
 si encuentras una vulnerabilidad de seguridad en sentinel:
 
 1. **NO** abras un issue publico
-2. envia un email a: security@m-society.dev
+2. envia un mensaje de discord al servidor https://discord.gg/9QRngbrMKS
 3. incluye: descripcion, pasos para reproducir, impacto, sugerencia de fix
 
 respondemos dentro de 48 horas.
